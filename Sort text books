@@ -3,7 +3,13 @@ HELP! Jason can't find his textbook! It is two days before the test date, and Ja
 
 The sorting should NOT be case sensitive
 */
+#solution 1
+function sorter(textbooks) {
+  return textbooks.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : 
+                                  a.toLowerCase() < b.toLowerCase() ? -1  : 0)
+}
 
+#solution 2
 
 function sorter(textbooks) {
   let sortedBooks = [];
