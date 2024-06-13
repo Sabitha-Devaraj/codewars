@@ -1,0 +1,12 @@
+//Find the Difference in Age between Oldest and Youngest Family Members
+function differenceInAges(ages){
+  var ageArr = [];
+  ageArr = ages.sort(function(a,b) {return a-b})
+  var newArr = []
+  var minAge = ageArr[0]
+  var oldAge = ageArr[ageArr.length-1]
+  newArr.push(minAge)
+  newArr.push(oldAge)
+  newArr.push(oldAge - minAge) 
+  return newArr
+}
